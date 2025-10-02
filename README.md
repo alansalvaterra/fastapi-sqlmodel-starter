@@ -53,16 +53,20 @@ source venv/bin/activate
 # 3. Instale as dependências
 pip install -r requirements.txt
 
-# 4. Inicie o PostgreSQL com Docker
+# 4. Configure as variáveis de ambiente
+cp .env.example .env
+# Edite o .env se necessário (credenciais do banco)
+
+# 5. Inicie o PostgreSQL com Docker
 docker-compose up -d postgres
 
-# 5. Execute as migrations do banco
+# 6. Execute as migrations do banco
 alembic upgrade head
 
-# 6. Popule com dados de exemplo
+# 7. Popule com dados de exemplo
 python scripts/seed_data.py
 
-# 7. Inicie a API
+# 8. Inicie a API
 uvicorn app.main:app --reload
 ```
 
