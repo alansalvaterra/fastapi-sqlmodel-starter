@@ -1,5 +1,12 @@
 # 🚀 FastAPI SQLModel Starter
 
+![Python](https://img.shields.io/badge/python-3.8+-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1-green)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue) 
+![SQLModel](https://img.shields.io/badge/SQLModel-0.0.11-orange)
+![Alembic](https://img.shields.io/badge/Alembic-1.12.1-lightblue)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
 Boilerplate profissional para APIs Python com FastAPI, SQLModel, PostgreSQL e Alembic.
 
 ## ✨ Características
